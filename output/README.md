@@ -11,23 +11,23 @@
 * [Questions](#questions)
 
 ## Description
-This is a demonstration project to show my README generator. The demonstration project is an application which... blah blah.
+This is a demonstration to show how my README generator application works... blah blah.
 
 ## Installation
-No installation required - this can be used via the browser.
+None required.
 
 ## Usage
 N/A
 
 ## Contributing
-This is not open source so cannot be contributed to!
+This is not open source!
 
 ## Tests
-N/A
+None
 
 ## License
 This project is licensed under the MIT License.
 
 ## Questions
 If you have a question, please reach out! You can contact me via email on test@hotmail.com. 
-Or, check out my [GitHub profile](https://github.com/githubusername).
+Or, check out my [GitHub profile](https://github.com/testusername).

@@ -54,14 +54,12 @@ const questions = [{
 
 // function to write README file
 function writeToFile(data) {
-// Creates file with title as the file name
-    const fileName = (`${data.title}-README.md`);
 
 // Generates the markdown content
     generateMarkdown(data);
 
-// Creates the file and puts the markdown content in it. Also includes ternary operator to catch error, or tell user the operation was successful.
-    fs.writeFile(`./output/${fileName}`, markdownData, (err) => err ? console.error(err) : console.log('Success!')
+// Creates the README.md file in the output folder, and puts the markdown content in it. Also includes ternary operator to catch error, or tell user the operation was successful.
+    fs.writeFile(`./output/README.md`, markdownData, (err) => err ? console.error(err) : console.log('Success!')
     );
 }
 

@@ -1,7 +1,7 @@
 const fs = require("fs");
 let licenseIcon;
 
-// function to generate license icon
+// function to generate license icon depending on the user's choice
 function generateLicense(data) {
   if (data.license === 'MIT') {
     licenseIcon = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
@@ -56,4 +56,5 @@ Or, check out my [GitHub profile](https://github.com/${data.username}).`
 )
 }
 
+// So that the markdown content can be accessed in the index.js file
 module.exports = generateMarkdown;

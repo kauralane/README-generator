@@ -52,10 +52,14 @@ const questions = [{
 }
 ];
 
-inquirer.prompt(questions);
+inquirer.prompt(questions)
+    .then((data) => writeToFile(data));
 
 // function to write README file
-function writeToFile(fileName, data) {
+function writeToFile(data) {
+    fs.writeFile(`${data.title}-README.md`, JSON.stringify(data), (err) =>
+        err ? console.error(err) : console.log('Success!')
+    );
 }
 
 // function to initialize program

@@ -13,6 +13,8 @@
 ## Description
 This is command-line application that dynamically creates a README.md file from the user's inputs. Inquirer is used to present the user with a series of questions to answer, and then response are put in to the relevant section of the newly generated README file. 
 
+You can view a video demonstrating how to use the application [here](https://drive.google.com/file/d/1h5lA12lsDv1aiLdc-eqhUDN7i0bKi-Gg/view).
+
 ## Installation
 This application uses node.js so please ensure that is installed.
 

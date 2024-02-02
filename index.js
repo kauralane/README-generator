@@ -61,7 +61,7 @@ function writeToFile(data) {
     generateMarkdown(data);
 
 // Creates the file and puts the markdown content in it. Also includes ternary operator to catch error, or tell user the operation was successful.
-    fs.writeFile(fileName, markdownData, (err) => err ? console.error(err) : console.log('Success!')
+    fs.writeFile(`./output/${fileName}`, markdownData, (err) => err ? console.error(err) : console.log('Success!')
     );
 }
 
@@ -72,4 +72,4 @@ function init() {
 }
 
 // function call to initialize program
-init();
+init(); 

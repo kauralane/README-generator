@@ -28,7 +28,7 @@ const questions = [{
     type: 'list',
     message: 'License:',
     name: 'license',
-    choices: ['MIT', 'Apache 2.0', 'GNU General Public License v2.0']
+    choices: ['MIT', 'Apache 2.0', 'GNU General Public v2.0']
 },
 {
     type: 'input',
@@ -52,19 +52,19 @@ const questions = [{
 }
 ];
 
-inquirer.prompt(questions)
-    .then((data) => writeToFile(data));
-
 // function to write README file
 function writeToFile(data) {
-    fs.writeFile(`${data.title}-README.md`, JSON.stringify(data), (err) =>
-        err ? console.error(err) : console.log('Success!')
+    const fileName = (`${data.title}-README.md`);
+    generateMarkdown(data);
+
+    fs.writeFile(fileName, markdownData, (err) => err ? console.error(err) : console.log('Success!')
     );
 }
 
 // function to initialize program
 function init() {
-
+    inquirer.prompt(questions)
+    .then((data) => writeToFile(data));
 }
 
 // function call to initialize program

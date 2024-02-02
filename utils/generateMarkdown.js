@@ -23,19 +23,17 @@ return markdownData = (
 `# ${data.title}
 ${licenseIcon}
 
+## Table of Contents
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [License](#license)
+* [Questions](#questions)
+
 ## Description
 ${data.description}
-
-## Table of Contents
-
-[Description](#description)
-[Table of Contents](#table-of-contents)
-[Installation](#installation)
-[Usage](#usage)
-[Contributors](#contributors)
-[Tests](#tests)
-[License](#license)
-[Questions](#questions)
 
 ## Installation
 ${data.installation}
@@ -53,7 +51,8 @@ ${data.tests}
 This project is licensed under the ${data.license} License.
 
 ## Questions
-If you have a question, please reach out! You can contact me via ${data.email}. Or, check out my GitHub profile: github.com/${data.username}.`
+If you have a question, please reach out! You can contact me via email on ${data.email}.\ 
+Or, check out my [GitHub profile](https://github.com/${data.username}).`
 )
 }
 
